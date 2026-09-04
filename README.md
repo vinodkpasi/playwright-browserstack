@@ -5,7 +5,7 @@ This repo contains samples for running [Playwright](https://playwright.dev/docs/
 
 ## Setup
 
-* Clone the repo `git clone -b sdk [[https://github.com/browserstack/node-js-playwright-browserstack.git](https://github.com/vinodkpasi/playwright-browserstack)](https://github.com/vinodkpasi/playwright-browserstack)` and run `cd playwright-browserstack`.
+* Clone the repo `https://github.com/vinodkpasi/playwright-browserstack` and run `cd playwright-browserstack`.
 * Set `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY` as environment variables with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) or update the same in `browserstack.yml` file.
 * Run `npm i` to install the dependencies.
 
