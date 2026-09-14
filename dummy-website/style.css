@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+label {
+    display: block;
+    margin-top: 15px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.success { color: green; }
+.error { color: red; }
