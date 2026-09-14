@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Test Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dummy Test Website</h1>
+        <p>Local website for Playwright + BrowserStack testing</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter username">
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter password">
+
+                <button type="submit">Login</button>
+                <p id="message"></p>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const message = document.getElementById("message");
+
+            if (username === "admin" && password === "admin123") {
+                message.textContent = "Login successful!";
+                message.className = "success";
+            } else {
+                message.textContent = "Invalid username or password";
+                message.className = "error";
+            }
+        });
+    </script>
+</body>
+</html>
