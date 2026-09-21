@@ -20,5 +20,5 @@ export default defineConfig({
 
   reporter: [['html', { open: 'never' }]],
 
-  retries:1
+  retries:0
 });
