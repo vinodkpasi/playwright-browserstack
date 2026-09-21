@@ -1,6 +1,6 @@
 import { test, expect } from "../fixtures/test";
 
-test('successful login', async ({ page }) => {
+test('Verify user can add a product to the cart, complete checkout, and place an order', async ({ page }) => {
   await page.goto('https://www.saucedemo.com');
 
   await page
